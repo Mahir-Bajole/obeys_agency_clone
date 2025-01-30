@@ -1,9 +1,12 @@
 
-
-
-
-
 var tl=gsap.timeline();
+function loadinganimation(){
+    
+
+
+
+
+
 
 tl.from(".line h1",{
     y:"+150",
@@ -45,7 +48,7 @@ tl.to(".line h2",{
 tl.to("#loader",{
     opacity:0,
     duration:0.4,
-    delay:3.5
+    delay:0
 });
 tl.from("#page1",{
     y:1200,
@@ -55,4 +58,36 @@ tl.from("#page1",{
 })
 tl.to("#loader",{
     display:"none"
+})
+
+}
+function cursor(){
+    document.addEventListener("mousemove",function(dets){
+        gsap.to("#crsr",{
+            left:dets.x,
+            top:dets.y
+        })
+    })
+    
+    Shery.makeMagnet("#header-part h3,.brand__svg" , {
+       
+        ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+        duration: 1,
+      });
+}
+loadinganimation();
+cursor();
+tl.from("#nav #header-part ,#nav svg",{
+    opacity:0,
+    duration:0.2,
+    delay:0.3,
+    stagger:0.2
+})
+
+tl.from(".hero h1,.hero h5,.hero h4",{
+    y:120,
+    duration:0.5,
+   
+    stagger:0.2
+
 })
