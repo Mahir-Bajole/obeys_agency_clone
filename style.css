@@ -285,7 +285,7 @@ background-color: #151515;
   padding: 20vh;
   position: relative;
   overflow: hidden;
-  margin-bottom: 10vw;
+  margin-bottom: 30vw;
 }
 #video-container {
   position: relative;
@@ -341,6 +341,7 @@ background-color: #151515;
   width: 100%;
   background-color: #151515;
   position: relative;
+  margin-top: 10vh;
   margin-bottom: 40vh;
 }
 #page3 #page3-container h1{

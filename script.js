@@ -69,8 +69,8 @@ function cursor(){
 var video1=document.querySelector("#video-container");
 video1.addEventListener("mouseleave",function(){
     gsap.to("#video-cur",{
-        left:"70%",
-        top:"-15%"
+        left:"10%",
+        
     })
 })
 
